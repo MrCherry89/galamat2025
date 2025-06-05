@@ -2,6 +2,7 @@
 @import "global";
 @import "fonts";
 
+
 .header{
     background: white;
     position: relative;
@@ -347,7 +348,7 @@ select{
     .footer-menu{
         @include flex;
         @include justify-between;
-        padding: 50px 0;
+        padding: 30px 0;
         @media(max-width: 1200px){
             padding-bottom: 0;
           }
@@ -380,10 +381,10 @@ select{
     .footer-info{
         @include flex;
         @include align-center;
-        padding: 50px 0;
+        padding: 30px 0;
         @media(max-width: 767px){
             @include dir-col;
-            padding: 30px 0;
+            padding: 20px 0;
            }
         .footer-logo{
             margin-right: 50px;
@@ -502,84 +503,66 @@ select{
             margin-bottom: 20px;
           }
     }
-    .info{
-        @include flex;
-        @include justify-between;
+    .info-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
         @media(max-width: 1200px){
-            @include dir-col;
-          }
-        .info-sect{
-            width: 33%;
-            background: $blue;
+            width: 100%;
+            }
+        @media(max-width: 1024px){
+            grid-template-columns: 1fr 1fr;
+            }
+        @media(max-width: 475px){
+            grid-template-columns: 1fr;
+            }
+        .info-item{
             padding: 20px;
             border-radius: 16px;
-            padding-top: 40px;
-            @media(max-width: 1200px){
-               width: 100%;
-               margin-bottom: 10px;
-               padding-top: 20px;
-              }
-              @media(max-width: 767px) {
-                padding: 20px 15px;
-              }
-            h4{
-                margin-bottom: 15px;
-                font-size: 24px;
+            background: white;
+            @include flex;
+            @include justify-between;
+            @include dir-col;
+            @media(max-width: 767px) {
+                padding: 15px;
+                }
+                &.active{
+                    background: $blue;
+                    b, span{
+                        color: white;
+                    }
+                }
+            b{
+                display: block;
+                margin-bottom: 25px;
+                font-size: 28px;
                 font-weight: 500;
-                color: white;
-            }
-            p{
-                font-size: 14px;
-                color: white;
-            }
-        }
-        .info-items{
-            width: 66%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 10px;
-            @media(max-width: 1200px){
-                width: 100%;
-              }
-            @media(max-width: 767px){
-                grid-template-columns: 1fr 1fr;
-              }
-            @media(max-width: 475px){
-                grid-template-columns: 1fr;
-              }
-            .info-item{
-                padding: 20px;
-                border-radius: 16px;
-                background: white;
+                line-height: 105%;
+                color: $blue;
+                max-width: 210px;
+                @media(max-width: 1200px) {
+                    font-size: 25px;
+                    }
                 @media(max-width: 767px) {
-                    padding: 15px;
-                  }
-                h3{
+                    font-size: 20px;
                     margin-bottom: 10px;
-                    font-size: 44px;
-                    font-weight: 500;
-                    color: #DB1D31;
-                    @media(max-width: 767px) {
-                        font-size: 28px;
-                        margin-bottom: 5px;
-                      }
-                }
-                b{
-                    display: block;
-                    margin-bottom: 10px;
-                    font-size: 24px;
-                    font-weight: 500;
-                    color: #132C5E;
-                    @media(max-width: 767px) {
-                       font-size: 20px;
-                       margin-bottom: 8px;
-                      }
-                }
+                    }
+            }
+            span{
+                font-size: 15px;
+                color: $blue;
+                max-width: 230px;
+                display: inline-block;
+                margin-top: auto;
+            }
+            &:nth-child(3){
                 span{
-                    font-size: 15px;
-                    color: #132C5E;
-                    max-width: 145px;
-                    display: inline-block;
+                    max-width: 175px;
+                }
+            }
+            &:nth-child(4){
+                span{
+                    max-width: 175px;
                 }
             }
         }
@@ -954,3 +937,5 @@ select{
         }
     }
   }
+
+  @import "pages/landing/style";
