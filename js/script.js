@@ -11,6 +11,70 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+
+  const swiper5 = new Swiper(".images-swiper", {
+    slidesPerView: "auto",            
+    spaceBetween: 20,
+    loop: true,
+    speed: 600,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
+
+  const prevArrow = document.querySelector(".planning-wrap .slider-navigation .slick-prev");
+  const nextArrow = document.querySelector(".planning-wrap .slider-navigation .slick-next");
+
+  // Инициализация основного слайдера
+  $(".slider-for").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    asNavFor: ".slider-nav",
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
+  });
+
+  // Инициализация навигационного слайдера
+  $(".slider-nav").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".slider-for",
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    vertical: true,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          focusOnSelect: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          vertical: false,
+          slidesToShow: 2,
+          focusOnSelect: true,
+        },
+      },
+    ],
+  });
+  
+
+  const designHallsSlider = new Swiper(".design-halls", {
+    slidesPerView: "auto", // чтобы работала фикс. ширина
+    spaceBetween: 10,      // отступ между слайдами
+    grabCursor: true,      // курсор "рука"
+    freeMode: true         // свободная прокрутка без фиксации
+  });
+
   // Swiper 2
   const swiper2 = new Swiper(".office-swiper", {
     slidesPerView: 1,
@@ -44,30 +108,36 @@ document.addEventListener("DOMContentLoaded", function () {
   function formatNumber(num) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
+  
 
   function syncRange(minInputId, maxInputId, minOutputId, maxOutputId, formatter) {
     const minInput = document.getElementById(minInputId);
     const maxInput = document.getElementById(maxInputId);
     const minOut = document.getElementById(minOutputId);
     const maxOut = document.getElementById(maxOutputId);
-
+  
+    // Проверка наличия всех элементов
+    if (!minInput || !maxInput || !minOut || !maxOut) return;
+  
     function update() {
       let min = parseFloat(minInput.value);
       let max = parseFloat(maxInput.value);
-
+  
+      if (isNaN(min)) min = 0;
+      if (isNaN(max)) max = 0;
+  
       if (min > max) [min, max] = [max, min];
-
+  
       minOut.textContent = formatter(min);
       maxOut.textContent = formatter(max);
     }
-
+  
     minInput.addEventListener("input", update);
     maxInput.addEventListener("input", update);
     update();
   }
-
   syncRange("price-min", "price-max", "price-min-val", "price-max-val", formatNumber);
-  syncRange("area-min", "area-max", "area-min-val", "area-max-val", (v) => v.toFixed(1).replace(".", ","));
+  syncRange("area-min", "area-max", "area-min-val", "area-max-val", (v) => v.toFixed(1).replace(".", ","));  
   
 
   document.querySelectorAll('.tab-button2').forEach(button => {
