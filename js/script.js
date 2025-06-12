@@ -75,6 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
     freeMode: true         // свободная прокрутка без фиксации
   });
 
+  $(window).scroll(function () {
+    var sticky = $(".top-scroll"),
+      scroll = $(window).scrollTop();
+
+    if (scroll >= 200) sticky.addClass("show");
+    else sticky.removeClass("show");
+  });
+
+  $(".top-scroll").smoothScroll({
+    speed: 1000,
+  });
+
   // Swiper 2
   const swiper2 = new Swiper(".office-swiper", {
     slidesPerView: 1,
@@ -179,4 +191,145 @@ document.querySelectorAll('.drop-menu').forEach(menu => {
     document.documentElement.classList.toggle('overflow');
   });
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".fon-left", {
+  x: "-20%",
+  y: "20%", 
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  }
+});
+
+gsap.to(".fon-right", {
+  x: "20%",
+  y: "20%", 
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "top top",
+    end: "bottom top",
+    scrub: true,
+  }
+});
+
+gsap.to(".section1 .info", {
+  y: "-200px",      
+  opacity: 0,       
+  ease: "sine.out", 
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "top top",
+    end: "center top", 
+    scrub: true        
+  }
+});
+
+gsap.fromTo(".section2 .texts",
+  {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    ease: "power2.out",     
+    duration: 1,          
+    scrollTrigger: {
+      trigger: ".section2",
+      start: "top 80%",    
+      end: "top 50%",
+      scrub: true        
+    }
+  }
+);
+
+gsap.fromTo(".section3 .texts",
+  {
+    opacity: 0,
+    scale: 0.5, // появляется чуть сжатым
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,   // возвращается к обычному размеру
+    ease: "expo.out", // более плавный и кинематографичный
+    scrollTrigger: {
+      trigger: ".section3",
+      start: "top 80%",
+      end: "top botom",
+      scrub: true
+    }
+  }
+);
+
+gsap.to(".section2 .bg1", {
+  x: "10%",
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  }
+});
+
+gsap.to(".section2 .bg2", {
+  x: "-10%",
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  }
+});
+
+gsap.to(".section3 .bg", {
+  x: "-10%",
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section3",
+    start: "top bottom",   // когда верх section3 ДОКАСАЕТСЯ низа экрана
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.to(".section4 .bg", {
+  x: "-10%",
+  ease: "sine.out",
+  scrollTrigger: {
+    trigger: ".section4",
+    start: "top bottom",   // когда верх section3 ДОКАСАЕТСЯ низа экрана
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+gsap.fromTo(".section4 .leave-request-wrap",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section4",
+      start: "top 50%",      // начнёт чуть раньше
+      end: "top 40%",        // закончится до полной прокрутки
+      scrub: true
+    }
+  }
+);
+
+
+
+
 });
