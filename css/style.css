@@ -1840,16 +1840,28 @@ input[type=range]::-moz-range-thumb {
   z-index: 0;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .section.section1 {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 300px;
+  }
+}
 .section.section1 .images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   z-index: 0;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
   z-index: -1;
+}
+@media (max-width: 1200px) {
+  .section.section1 .images {
+    bottom: 0;
+  }
 }
 .section.section1 .images img {
   transition: 0.8s;
@@ -2367,6 +2379,7 @@ input[type=range]::-moz-range-thumb {
 .section.section5 .info .tour360 {
   font-size: 150px;
   color: white;
+  transition: 0.3s;
   padding: 50px;
   background: #8D8D8D;
   border-radius: 16px;
@@ -2455,6 +2468,7 @@ input[type=range]::-moz-range-thumb {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
+  transition: 0.8s;
 }
 @media (max-width: 1024px) {
   .section.section6 .title-wrap {
@@ -2511,6 +2525,7 @@ input[type=range]::-moz-range-thumb {
   border-radius: 16px;
   overflow: hidden;
   height: 38vw;
+  transition: 0.8s;
 }
 @media (max-width: 600px) {
   .section.section6 .improvement-wrap .improvement-items .improvement-item {
@@ -2685,6 +2700,7 @@ input[type=range]::-moz-range-thumb {
 }
 .section.section-halls > .info .texts {
   width: 53%;
+  transition: 0.8s;
 }
 @media (max-width: 1200px) {
   .section.section-halls > .info .texts {
@@ -2721,6 +2737,7 @@ input[type=range]::-moz-range-thumb {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   align-self: flex-start;
+  transition: 0.8s;
 }
 @media (max-width: 1200px) {
   .section.section-halls > .info .tags {

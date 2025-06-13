@@ -230,22 +230,26 @@ gsap.to(".section1 .info", {
   }
 });
 
-gsap.fromTo(".section2 .texts",
-  {
-    opacity: 0
-  },
-  {
-    opacity: 1,
-    ease: "power2.out",     
-    duration: 1,          
-    scrollTrigger: {
-      trigger: ".section2",
-      start: "top 80%",    
-      end: "top 50%",
-      scrub: true        
+if (window.innerWidth >= 768) {
+  gsap.fromTo(".section2 .texts",
+    {
+      opacity: 0,
+      y: "20%",
+    },
+    {
+      opacity: 1,
+      y: "0%",
+      ease: "power2.out",
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".section2",
+        start: "top 65%",
+        end: "top 50%",
+        scrub: true
+      }
     }
-  }
-);
+  );
+}
 
 gsap.fromTo(".section3 .texts",
   {
@@ -310,6 +314,8 @@ gsap.to(".section4 .bg", {
   }
 });
 
+
+
 gsap.fromTo(".section4 .leave-request-wrap",
   {
     opacity: 0,
@@ -322,8 +328,118 @@ gsap.fromTo(".section4 .leave-request-wrap",
     ease: "expo.out",
     scrollTrigger: {
       trigger: ".section4",
-      start: "top 50%",      // начнёт чуть раньше
-      end: "top 40%",        // закончится до полной прокрутки
+      start: "top 50%",     
+      end: "top 40%",       
+      scrub: true
+    }
+  }
+);
+
+gsap.fromTo(".section-end .leave-request-wrap",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section-end",
+      start: "top 90%",     
+      end: "top 40%",       
+      scrub: true
+    }
+  }
+);
+
+gsap.fromTo(".section5 .tour360",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section5",
+      start: "top 90%",     
+      end: "top 40%",       
+      scrub: true
+    }
+  }
+);
+
+gsap.fromTo(".section6 .title-wrap",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section6",
+      start: "top 90%",     
+      end: "top 40%",      
+      scrub: true
+    }
+  }
+);
+
+gsap.from(".improvement-item", {
+  y: 300,
+  opacity: 0,
+  ease: "power4.out",
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: ".improvement-items",
+    start: "top 60%",
+    end: "top 30%", 
+    scrub: true, 
+   
+  }
+});
+
+
+gsap.fromTo(".section-halls .info .texts",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section-halls",
+      start: "top 20%",      // начнёт чуть раньше
+      end: "top 10%",        // закончится до полной прокрутки
+      scrub: true
+    }
+  }
+);
+
+gsap.fromTo(".section-halls .info .tags",
+  {
+    opacity: 0,
+    scale: 0.5,
+    transformOrigin: "center center"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    ease: "expo.out",
+    scrollTrigger: {
+      trigger: ".section-halls",
+      start: "top 0%",      // начнёт чуть раньше
+      end: "top 10%",        // закончится до полной прокрутки
       scrub: true
     }
   }
