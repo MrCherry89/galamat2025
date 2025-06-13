@@ -392,18 +392,25 @@ gsap.fromTo(".section6 .title-wrap",
   }
 );
 
-gsap.from(".improvement-item", {
-  y: 300,
-  opacity: 0,
-  ease: "power4.out",
-  stagger: 0.2,
-  scrollTrigger: {
-    trigger: ".improvement-items",
-    start: "top 60%",
-    end: "top 30%", 
-    scrub: true, 
-   
-  }
+gsap.utils.toArray(".improvement-item").forEach((item, index) => {
+  gsap.fromTo(item,
+    {
+      y: 150,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: item,
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+        // markers: true // включи для отладки
+      }
+    }
+  );
 });
 
 
