@@ -200,7 +200,7 @@ gsap.to(".fon-left", {
   ease: "sine.out",
   scrollTrigger: {
     trigger: ".section1",
-    start: "top top",
+    start: "top-=200 top",
     end: "bottom top",
     scrub: true,
   }
@@ -212,7 +212,7 @@ gsap.to(".fon-right", {
   ease: "sine.out",
   scrollTrigger: {
     trigger: ".section1",
-    start: "top top",
+    start: "top-=200 top",
     end: "bottom top",
     scrub: true,
   }
