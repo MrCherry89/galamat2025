@@ -452,6 +452,31 @@ gsap.fromTo(".section-halls .info .tags",
   }
 );
 
+$(".cards-wrap .show").on("click", function(){
+  $(".cards .card").removeClass("hide");
+})
+
+
+const buttons2 = document.querySelectorAll('.tab2 .tab-button');
+const contents2 = document.querySelectorAll('.tab2 .tab-content2');
+
+buttons2.forEach(button => {
+  button.addEventListener('click', () => {
+    // Активируем текущую кнопку
+    buttons2.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const tabId = button.getAttribute('data-tab');
+
+    // Переключаем контент
+    contents2.forEach(content => {
+      content.classList.toggle(
+        'active',
+        content.getAttribute('data-content') === tabId
+      );
+    });
+  });
+});
 
 
 

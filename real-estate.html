@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galamat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="top-line">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <div class="social-icons">
+          <a href="#"><img src="img/wp-icon.svg" alt=""></a>
+          <a href="#"><img src="img/tg-icon.svg" alt=""></a>
+          <a href="#"><img src="img/phone-icon.svg" alt=""></a>
+        </div>
+        <a href="#" class="border-btn order-call">Заказать звонок</a>
+        <select>
+          <option value="1">RU</option>
+          <option value="2">KZ</option>
+        </select>
+        <div class="drop-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="menu-wrap">
+          <ul class="main-menu">
+            <li class="active"><a href="#">Недвижимость </a></li>
+            <li><a href="error.html">Заявка</a></li>
+            <li><a href="error.html">О компании</a></li>
+            <li><a href="error.html">Акции</a></li>
+            <li><a href="error.html">Способы покупки</a></li>
+          </ul>
+          
+          <div class="btns">
+            <select>
+              <option value="1">RU</option>
+              <option value="2">KZ</option>
+            </select>
+            <a href="#" class="border-btn order-call">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-line">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <ul class="main-menu">
+          <li class="active"><a href="#">Недвижимость </a></li>
+          <li><a href="error.html">Заявка</a></li>
+          <li><a href="error.html">О компании</a></li>
+          <li><a href="error.html">Акции</a></li>
+          <li><a href="error.html">Способы покупки</a></li>
+        </ul>
+        <a href="#" class="login">
+          <img src="img/login-icon.svg" alt="">
+          Войти
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="filter-wrapper filter-style2">
+    <div class="wrapper">
+      <div class="title-wrap">
+        <h2 class="main-title">Проекты Galamat</h2>
+        <div class="filter-btn">Filter btn</div>
+      </div>
+      <div class="filters">
+        <div class="top-info">
+          <div class="select-info">
+            <span>Район</span>
+            <select>
+              <option value="1">Есиль</option>
+              <option value="2">Есиль 2</option>
+              <option value="3">Есиль 3</option>
+            </select>
+          </div>
+          <div class="select-info">
+            <span>Жилой комплекс</span>
+            <select>
+              <option value="1">ЖК Орлеу</option>
+              <option value="2">ЖК Орлеу 2</option>
+              <option value="3">ЖК Орлеу 3</option>
+            </select>
+          </div>
+          <div class="select-info">
+            <span>Район</span>
+            <select>
+              <option value="1">10</option>
+              <option value="2">11</option>
+              <option value="3">12</option>
+            </select>
+          </div>
+          <div class="select-info">
+            <span></span>
+            <select>
+              <option value="1">Любой</option>
+              <option value="2">Любой 2</option>
+              <option value="3">Любой 3</option>
+            </select>
+          </div>
+          <span class="reset">Сбросить</span>
+        </div>
+        <div class="bottom-info">
+          <div class="room">
+            <span>Ком.</span>
+            <div class="items">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+            </div>
+          </div>
+          <div class="filter-block">
+            <div class="filter-group">
+              <div class="label">Стоимость</div>
+              <div class="values">от <span id="price-min-val">10 000 000</span> ₸ — до <span id="price-max-val">50 000 000</span> ₸</div>
+              <div class="range-slider">
+                <input type="range" id="price-min" min="10000000" max="83000000" value="10000000" step="100000">
+                <input type="range" id="price-max" min="10000000" max="83000000" value="50000000" step="100000">
+              </div>
+            </div>
+          
+            <div class="filter-group">
+              <div class="label">Площадь м²</div>
+              <div class="values">от <span id="area-min-val">14,0</span> — до <span id="area-max-val">80,5</span></div>
+              <div class="range-slider">
+                <input type="range" id="area-min" min="14" max="80.5" step="0.5" value="14">
+                <input type="range" id="area-max" min="14" max="80.5" step="0.5" value="80.5">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="tab2">
+        <div class="tabs2">
+          <button class="tab-button " data-tab="1">
+            <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6364 19.5556H26V22H0V19.5556H2.36364V1.22222C2.36364 0.898069 2.48815 0.587192 2.70978 0.357981C2.93142 0.128769 3.23202 0 3.54545 0H15.3636C15.6771 0 15.9777 0.128769 16.1993 0.357981C16.4209 0.587192 16.5455 0.898069 16.5455 1.22222V19.5556H18.9091V7.33333H22.4545C22.768 7.33333 23.0686 7.4621 23.2902 7.69131C23.5119 7.92053 23.6364 8.2314 23.6364 8.55556V19.5556ZM7.09091 9.77778V12.2222H11.8182V9.77778H7.09091ZM7.09091 4.88889V7.33333H11.8182V4.88889H7.09091Z"/>
+            </svg>
+            Фасады
+          </button>
+          <button class="tab-button active" data-tab="2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="11.1763" width="8.82353" height="8.82353" rx="2"/>
+                <rect width="8.82353" height="8.82353" rx="2"/>
+                <rect x="11.1758" y="11.1763" width="8.82353" height="8.82353" rx="2"/>
+                <rect x="11.1758" width="8.82353" height="8.82353" rx="2"/>
+            </svg>
+            Шахматка
+          </button>
+          <button class="tab-button" data-tab="3">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.8 18.7V9.9H13.2C12.5925 9.9 12.1 9.40751 12.1 8.8C12.1 8.19249 12.5925 7.7 13.2 7.7H19.8V3.3C19.8 3.00826 19.684 2.72856 19.4777 2.52227C19.2714 2.31598 18.9917 2.2 18.7 2.2H8.8V8.8C8.8 9.40751 8.30751 9.9 7.7 9.9C7.09249 9.9 6.6 9.40751 6.6 8.8V2.2H3.3C3.00826 2.2 2.72856 2.31598 2.52227 2.52227C2.31598 2.72856 2.2 3.00826 2.2 3.3V13.2H11C11.6075 13.2 12.1 13.6925 12.1 14.3C12.1 14.9075 11.6075 15.4 11 15.4H2.2V18.7C2.2 18.9917 2.31598 19.2714 2.52227 19.4777C2.72856 19.684 3.00826 19.8 3.3 19.8H7.7C8.30751 19.8 8.8 20.2925 8.8 20.9C8.8 21.5075 8.30751 22 7.7 22H3.3C2.42479 22 1.58567 21.6521 0.966797 21.0332C0.347927 20.4143 0 19.5752 0 18.7V3.3C0 2.42479 0.347927 1.58567 0.966797 0.966797C1.58567 0.347927 2.42479 0 3.3 0H18.7C19.5752 0 20.4143 0.347927 21.0332 0.966797C21.6521 1.58567 22 2.42479 22 3.3V18.7C22 19.5752 21.6521 20.4143 21.0332 21.0332C20.4143 21.6521 19.5752 22 18.7 22H13.2C12.5925 22 12.1 21.5075 12.1 20.9C12.1 20.2925 12.5925 19.8 13.2 19.8H18.7C18.9917 19.8 19.2714 19.684 19.4777 19.4777C19.684 19.2714 19.8 18.9917 19.8 18.7Z"/>
+            </svg>
+            Планировка
+          </button>
+        </div>
+      
+        <div class="tab-content2 " data-content="1">
+            <div class="facade-wrap">
+                <div class="bg" style="background-image: url(img/fasad-fon.jpg)"></div>
+            </div>
+        </div>
+        <div class="tab-content2 active" data-content="2">
+            <div class="checkerboard-wrap">
+                <!-- <div class="top-info">
+                    <div class="top-info-item">
+                        <span class="circle blue"></span>
+                        <span class="text">Свободно</span>
+                    </div>
+                    <div class="top-info-item">
+                        <span class="circle red"></span>
+                        <span class="text">Продано</span>
+                    </div>
+                    <div class="top-info-item">
+                        <span class="circle yellow"></span>
+                        <span class="text">Бронь</span>
+                    </div>
+                    <div class="top-info-item">
+                        <span class="circle grey"></span>
+                        <span class="text">Не для продажи</span>
+                    </div>
+                </div> -->
+                <div class="checkerboard-items2">
+                    <div class="checkerboard-item">
+                        <span class="title">Секция 1</span>
+                        <div class="sect-table">
+                            <div class="left-info">
+                                <div class="num">12</div>
+                                <div class="num">11</div>
+                                <div class="num">10</div>
+                                <div class="num">9</div>
+                                <div class="num">8</div>
+                                <div class="num">7</div>
+                                <div class="num">6</div>
+                                <div class="num">5</div>
+                                <div class="num">4</div>
+                                <div class="num">3</div>
+                                <div class="num">2</div>
+                            </div>
+                            <div class="sect-items">
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item grey">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item red">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkerboard-item">
+                        <span class="title no-padding">Секция 2</span>
+                        <div class="sect-table">
+                            <div class="sect-items">
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item red">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item yellow">1</div>
+                                    <div class="sect-item yellow">2</div>
+                                    <div class="sect-item yellow">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkerboard-item">
+                        <span class="title">Секция 3</span>
+                        <div class="sect-table">
+
+                            <div class="sect-items">
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item grey">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item red">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item red">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item yellow">2</div>
+                                    <div class="sect-item yellow">1</div>
+                                    <div class="sect-item yellow">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item grey">1</div>
+                                    <div class="sect-item grey">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                                <div class="line">
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">2</div>
+                                    <div class="sect-item">1</div>
+                                    <div class="sect-item">3</div>
+                                    <div class="sect-item">1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content2 " data-content="3">
+            <div class="cards-wrap">
+                <div class="cards">
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                    <div class="card hide">
+                        <span class="name">ЖК Орлеу</span>
+                        <span class="date">Ближайшая сдача 21.01.2026</span>
+                        <a href="#" class="img-wrap">
+                            <img src="img/product-img.webp" alt="">
+                        </a>
+                        <div class="prices">
+                            <span class="new-price">19 000 000тг.</span>
+                            <span class="old-price">20 000 000</span>
+                        </div>
+                        <div class="ipoteka">
+                            <span class="grey">В ипотеку </span>
+                            <span class="blue">от 200 000тг.</span>
+                        </div>
+                        <div class="infos">
+                            <b>2 ком. кв</b>
+                            <b>30,3 м</b>
+                            <b>7 этаж из 12</b>
+                        </div>
+                        <div class="style-btns">
+                            <div class="red-btn">Скидка до 21%</div>
+                            <div class="blue-bt">Без отделки</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-info">
+                    <span>Показано 6 из 50 </span>
+                    <button class="show" type="button">Показать еще</button>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <ul class="footer-menu">
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Оставить заявку</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+        <li><a href="#">Офис продаж</a></li>
+      </ul>
+      <div class="footer-info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/footer-logo.svg" alt="">
+        </a>
+        <p>
+          Все материалы, размещённые на данном сайте, являются интеллектуальной собственностью компании Galamat © 2018–2025. Пользователь предупреждён, что без письменного согласия правообладателя запрещено копировать, распространять, использовать или иным образом распоряжаться указанными материалами. В случае нарушения этих условий, Galamat оставляет за собой право
+на применение мер, предусмотренных законодательством Республики Казахстан, включая взыскание штрафов и обращение
+в соответствующие государственные органы для защиты своих прав. Информация, размещённая на сайте, предназначена исключительно для ознакомления и не является публичной офертой.
+        </p>
+        <a href="#" class="private">
+          Политика Конфиденциальности
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <div id="popup" class="popup hidden">текст дефолтный</div>
+  <script>
+    const popup = document.getElementById('popup');
+  
+    function isMobile() {
+      return window.innerWidth < 768;
+    }
+  
+    document.querySelectorAll('.sect-item').forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        if (isMobile()) return;
+  
+        const rect = item.getBoundingClientRect();
+        popup.style.left = rect.left + window.scrollX + rect.width + 8 + 'px';
+        popup.style.top = rect.top + window.scrollY + 'px';
+        popup.innerText = 'текст дефолтный';
+        popup.style.display = 'block';
+      });
+  
+      item.addEventListener('mouseleave', () => {
+        popup.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
+
