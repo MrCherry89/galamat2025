@@ -84,7 +84,7 @@
 
 .facade-wrap{
     .bg{
-        height: 510px;
+        height: 33vw;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -97,7 +97,7 @@
     }
 }
 
-.popup {
+#checkerboard-popup {
     position: absolute;
     background: #fff;
     border: 1px solid #ccc;
@@ -107,6 +107,47 @@
     z-index: 1000;
     font-size: 14px;
     display: none;
+    padding: 10px;
+    min-width: 190px;
+    .texts{
+        @include flex;
+        @include align-center;
+        margin-bottom: 6px;
+        .text{
+            font-size: 14px;
+            color: #353535;
+        }
+        b{
+            margin-left: auto;
+            font-size: 14px;
+            font-weight: 500;
+            color: #353535;
+        }
+        .num{
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            @include flex;
+            @include align-center;
+            @include justify-center;
+            background: #132C5E;
+            border-radius: 4px;
+            color: white;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+    .price{
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 2px;
+        color: #353535;
+    }
+    .grey{
+        font-size: 14px;
+        color: #353535;
+    }
   }
   
   .popup.visible {
@@ -202,6 +243,12 @@
                 margin-right: 15px;
                 font-size: 30px;
                 font-weight: 500;
+                @media (max-width: 1024px) {
+                    font-size: 26px;
+                }
+                @media (max-width: 767px) {
+                   font-size: 24px;
+                }
             }
             .old-price{
                 opacity: 0.61;
@@ -267,25 +314,45 @@
 .checkerboard-wrap{
     .top-info{
         @include flex;
-        .checkerboard-wrap-item{
+        margin: 40px 0;
+        @media (max-width: 1200px) {
+          margin: 30px 0;
+        }
+        @media (max-width: 767px) {
+            @include dir-col;
+            margin: 10px 0 20px;
+            align-items: flex-start;
+          }
+        .top-info-item{
             @include flex;
             @include align-center;
+            margin-right: 50px;
+            @media (max-width: 767px) {
+                margin-right: 0px;
+                margin-bottom: 15px;
+              }
             .circle{
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                min-width: 26px;
+                margin-right: 12px;
                 &.red{
-                    background: #000;
+                    background: #CE2432;
                 }
                 &.blue{
-                    background: #000;
+                    background: #132C5E;
                 }
                 &.yellow{
-                    background: #000;
+                    background: #F69F13;
                 }
                 &.grey{
-                    background: #000;
+                    background: #A7A7A7;
                 }
             }
             .text{
-
+                font-size: 17px;
+                color: #7B7A7A;
             }
         }
     }
@@ -293,16 +360,22 @@
 
 .checkerboard-items2{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     width: 100%;
-    @media (max-width: 1300px) {
+    @media (max-width: 1800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    @media (max-width: 1350px) {
         grid-template-columns: 1fr 1fr;
       }
     @media (max-width: 1024px) {
         grid-template-columns: 1fr;
       }
     .checkerboard-item{
+        @include flex;
+        @include dir-col;
+        justify-content: space-between;
         .title{
             margin-bottom: 16px;
             font-size: 17px;
@@ -319,23 +392,29 @@
         }
         .sect-table{
             @include flex;
+            margin-top: auto;
             .left-info{
-                width: 50px;
-                min-width: 50px;
+                width: 30px;
+                min-width: 30px;
                 @media (max-width: 767px) {
-                    width: 30px;
-                    min-width: 30px;
+                    width: 26px;
+                    min-width: 26px;
+                    @include flex;
+                    @include dir-col;
+                    @include justify-between;
+                    padding: 2px 0 10px;
                     }
                 .num{
-                    font-size: 17px;
+                    font-size: 15px;
                     color: #7B7A7A;
                     margin-bottom: 10px;
                     height: 38px;
                     @include flex;
                     @include align-center;
                     @media (max-width: 767px) {
-                        font-size: 14px;
-                        height: 30px;
+                        font-size: 13px;
+                        height: 26px;
+                        margin-bottom: 0;
                         }
                 }
             }
@@ -353,6 +432,7 @@
             }
             .sect-items{
                 flex-grow: 1;
+                margin-top: auto;
                 .line{
                     display: grid;
                     grid-template-columns: repeat(8, 1fr);
@@ -387,5 +467,11 @@
                 }
             }
         }
+    }
+}
+
+.tab2-wrap{
+    .wrapper{
+        max-width: 1920px;
     }
 }
