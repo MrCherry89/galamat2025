@@ -201,6 +201,7 @@ select{
     color: rgba(black, .65);
     padding: 0 10px;
     cursor: pointer;
+    background-color: #fff;
     background-image: url('../img/polygon.svg'); /* путь к иконке */
     background-repeat: no-repeat;
     background-position: right 15px center; /* сдвиг стрелки влево (увеличивай отступ) */
@@ -736,6 +737,7 @@ select{
                     border-radius: 4px;
                     padding: 0 25px;
                     border: none;
+                    background-color: #fff;
                     background-image: url(../img/polygon.svg);
                     background-repeat: no-repeat;
                     background-position: right 6px center;

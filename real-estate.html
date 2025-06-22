@@ -1722,6 +1722,7 @@
       <span class="grey">60,2 м</span>
     </div>
   </div>
+  
   <script>
     const popup = document.getElementById('checkerboard-popup');
   
@@ -1730,6 +1731,7 @@
     }
   
     document.querySelectorAll('.sect-item').forEach(item => {
+      // Ховер для десктопа
       item.addEventListener('mouseenter', () => {
         if (isMobile()) return;
   
@@ -1741,9 +1743,40 @@
       });
   
       item.addEventListener('mouseleave', () => {
+        if (isMobile()) return;
+  
         popup.style.display = 'none';
         popup.classList.add('hidden');
       });
+  
+      // Клик для мобилки
+      item.addEventListener('click', () => {
+        if (!isMobile()) return;
+  
+        const rect = item.getBoundingClientRect();
+        popup.style.left = rect.left + window.scrollX + 'px';
+        popup.style.top = rect.bottom + window.scrollY + 8 + 'px'; // под элементом
+  
+        const isVisible = popup.style.display === 'block';
+  
+        if (isVisible) {
+          popup.style.display = 'none';
+          popup.classList.add('hidden');
+        } else {
+          popup.style.display = 'block';
+          popup.classList.remove('hidden');
+        }
+      });
+    });
+  
+    // (по желанию) клик вне попапа закрывает его на мобилках
+    document.addEventListener('click', (e) => {
+      if (!isMobile()) return;
+      const isInside = e.target.closest('.sect-item') || e.target.closest('#checkerboard-popup');
+      if (!isInside) {
+        popup.style.display = 'none';
+        popup.classList.add('hidden');
+      }
     });
   </script>
 </body>
