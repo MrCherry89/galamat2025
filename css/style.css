@@ -3761,7 +3761,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 #card-popup .popup-body {
-  background: white;
+  background: #E8EAEF;
   width: 100%;
   padding: 40px 20px 70px;
   height: 100vh;
@@ -3799,7 +3799,7 @@ input[type=range]::-moz-range-thumb {
   display: -ms-flexbox;
   display: flex;
   padding-top: 60px;
-  background: white;
+  background: #E8EAEF;
   max-width: 1040px;
   width: 100%;
   margin: 0 auto;
