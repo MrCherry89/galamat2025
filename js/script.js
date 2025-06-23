@@ -66,6 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ],
   });
+
+  $('.popup').magnificPopup({
+    type: 'inline',
+    mainClass: 'mfp-fade'
+})
   
 
   const designHallsSlider = new Swiper(".design-halls", {

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galamat</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -59,7 +60,7 @@
           <li><a href="error.html">Акции</a></li>
           <li><a href="error.html">Способы покупки</a></li>
         </ul>
-        <a href="#" class="login">
+        <a href="#card-popup" class="login popup">
           <img src="img/login-icon.svg" alt="">
           Войти
         </a>
@@ -1703,13 +1704,60 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.smooth-scroll.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script src="js/script.js"></script>
+
+  <div id="card-popup" class="mfp-hide white-popup mfp-with-anim">
+    <div class="popup-body">
+      <button title="Close (Esc)" type="button" class="mfp-close">
+        Закрыть карточку
+        <img src="img/popup-close.svg" alt="">
+    </button>
+      <div class="info">
+        <div class="texts">
+            <div class="top-info">
+                <h2>ЖК Орлеу</h2>
+                <span class="nomer">1-комнатная
+                    квартира №394</span>
+                <span class="status">Свободно</span>
+                <a href="#" download="" class="download">
+                    <img src="img/download-icon.svg" alt="">
+                </a>
+                <a href="#" class="view">Смотреть проект</a>
+            </div>
+            <div class="apartment-info">
+                <h4>Преимущества квартиры:</h4>
+                <div class="items">
+                    <div class="item">
+                        <img src="img/apartment-img1.svg" alt="">
+                        <span>Кухня-
+                            гостинная</span>
+                    </div>
+                    <div class="item">
+                        <img src="img/apartment-img2.svg" alt="">
+                        <span>Готовый
+                            ремонт</span>
+                    </div>
+                    <div class="item">
+                        <img src="img/apartment-img3.svg" alt="">
+                        <span>Солнечная
+                            сторона</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img-wrap">
+            <img src="img/card-popup-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="checkerboard-popup" class="popup hidden">
     <div class="top">
