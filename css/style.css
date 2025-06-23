@@ -3771,14 +3771,16 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 1024px) {
   #card-popup .popup-body {
     padding: 20px;
+    padding-bottom: 50px;
   }
 }
 #card-popup .popup-body .mfp-close {
   position: static;
   transform: translate(0, 0);
   opacity: 1;
-  font-size: 14px;
+  font-size: 16px;
   color: #6B6B6B;
+  font-weight: 500;
   margin-left: auto;
   width: auto;
   height: auto;
@@ -3798,10 +3800,9 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   padding-top: 60px;
   background: white;
-  max-width: 1300px;
+  max-width: 1040px;
   width: 100%;
   margin: 0 auto;
-  height: 100%;
   overflow-y: auto;
 }
 @media (max-width: 1024px) {
@@ -3810,7 +3811,12 @@ input[type=range]::-moz-range-thumb {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  #card-popup .info {
+    height: 100%;
   }
 }
 #card-popup .info .texts {
@@ -3834,6 +3840,12 @@ input[type=range]::-moz-range-thumb {
   -ms-flex-direction: column;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 160px;
+}
+@media (max-width: 767px) {
+  #card-popup .info .texts .top-info {
+    margin-bottom: 20px;
+  }
 }
 #card-popup .info .texts .top-info h2 {
   font-size: 40px;

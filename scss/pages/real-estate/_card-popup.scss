@@ -8,13 +8,15 @@
         z-index: 10;
         @media (max-width: 1024px) {
            padding: 20px;
+           padding-bottom: 50px;
          }
         .mfp-close{
             position: static;
             transform: translate(0,0);
             opacity: 1;
-            font-size: 14px;
+            font-size: 16px;
             color: #6B6B6B;
+            font-weight: 500;
             margin-left: auto;
             width: auto;
             height: auto;
@@ -29,14 +31,16 @@
         @include flex;
         padding-top: 60px;
         background: white;
-        max-width: 1300px;
+        max-width: 1040px;
         width: 100%;
         margin: 0 auto;
-        height: 100%;
         overflow-y: auto;
         @media (max-width: 1024px) {
            @include dir-col;
-           padding-top: 20px;
+           padding-top: 5px;
+        }
+        @media (max-width: 767px) {
+           height: 100%;
         }
         .texts{
             @include flex;
@@ -46,6 +50,10 @@
                 @include flex;
                 @include dir-col;
                 align-items: flex-start;
+                margin-bottom: 160px;
+                @media (max-width: 767px) {
+                    margin-bottom: 20px;
+                 }
                 h2{
                     font-size: 40px;
                     margin-bottom: 10px;
