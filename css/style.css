@@ -3764,14 +3764,12 @@ input[type=range]::-moz-range-thumb {
   background: #E8EAEF;
   width: 100%;
   padding: 40px 20px 70px;
-  height: 100vh;
   position: relative;
   z-index: 10;
 }
 @media (max-width: 1024px) {
   #card-popup .popup-body {
-    padding: 20px;
-    padding-bottom: 50px;
+    padding: 20px 0 50px;
   }
 }
 #card-popup .popup-body .mfp-close {
@@ -3926,6 +3924,13 @@ input[type=range]::-moz-range-thumb {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 767px) {
+  #card-popup .info .texts .apartment-info .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
 #card-popup .info .texts .apartment-info .items .item {
   margin-right: 12px;
   border: 1px solid #132C5E;
@@ -3945,6 +3950,11 @@ input[type=range]::-moz-range-thumb {
   #card-popup .info .texts .apartment-info .items .item {
     min-width: 90px;
     min-height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  #card-popup .info .texts .apartment-info .items .item {
+    margin: 0;
   }
 }
 #card-popup .info .texts .apartment-info .items .item img {
@@ -3973,7 +3983,7 @@ input[type=range]::-moz-range-thumb {
 @media (max-width: 1024px) {
   #card-popup .info .img-wrap {
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 #card-popup .info .img-wrap img {

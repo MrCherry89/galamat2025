@@ -3,12 +3,10 @@
         background: #E8EAEF;
         width: 100%;
         padding: 40px 20px 70px;
-        height: 100vh;
         position: relative;
         z-index: 10;
         @media (max-width: 1024px) {
-           padding: 20px;
-           padding-bottom: 50px;
+           padding: 20px 0 50px;
          }
         .mfp-close{
             position: static;
@@ -120,6 +118,11 @@
                 }
                 .items{
                     @include flex;
+                    @media (max-width: 767px) {
+                       display: grid;
+                       grid-template-columns: 1fr 1fr 1fr;
+                       gap: 10px;
+                     }
                     .item{
                         margin-right: 12px;
                         border: 1px solid #132C5E;
@@ -133,6 +136,9 @@
                            min-width: 90px;
                            min-height: 120px;
                          }
+                         @media (max-width: 767px) {
+                            margin: 0;
+                          }
                         img{
                             @media (max-width: 1024px) {
                                 width: 30px;
@@ -157,7 +163,7 @@
             align-self: center;
             @media (max-width: 1024px) {
                 margin: 20px auto;
-                padding: 0 20px;
+                padding: 0;
              }
             img{
                 max-width: 100%;
