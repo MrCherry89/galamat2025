@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galamat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="top-line">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <div class="social-icons">
+          <a href="#"><img src="img/wp-icon.svg" alt=""></a>
+          <a href="#"><img src="img/tg-icon.svg" alt=""></a>
+          <a href="#"><img src="img/phone-icon.svg" alt=""></a>
+        </div>
+        <a href="#" class="border-btn order-call">Заказать звонок</a>
+        <select>
+          <option value="1">RU</option>
+          <option value="2">KZ</option>
+        </select>
+        <div class="drop-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+        <div class="menu-wrap">
+          <ul class="main-menu">
+            <li class="active"><a href="#">Недвижимость </a></li>
+            <li><a href="error.html">Заявка</a></li>
+            <li><a href="error.html">О компании</a></li>
+            <li><a href="error.html">Акции</a></li>
+            <li><a href="error.html">Способы покупки</a></li>
+          </ul>
+          
+          <div class="btns">
+            <select>
+              <option value="1">RU</option>
+              <option value="2">KZ</option>
+            </select>
+            <a href="#" class="border-btn order-call">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-line">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <ul class="main-menu">
+          <li class="active"><a href="#">Недвижимость </a></li>
+          <li><a href="error.html">Заявка</a></li>
+          <li><a href="error.html">О компании</a></li>
+          <li><a href="error.html">Акции</a></li>
+          <li><a href="error.html">Способы покупки</a></li>
+        </ul>
+        <a href="#card-popup" class="login popup">
+          <img src="img/login-icon.svg" alt="">
+          Войти
+        </a>
+      </div>
+    </div>
+  </header>
+
+    <div class="real-estate-calculator">
+        <div class="wrapper">
+            <div class="texts">
+                <h3>Калькулятор недвижимости </h3>
+                <p>Все материалы, размещённые на данном сайте, являются интеллектуальной 
+                    собственностью компании Galamat © 2018–2025. </p>
+                    <a href="#" class="red-btn">Подать заявку</a>
+            </div>
+            <div class="img">
+                <img src="img/real-estate-img.svg" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="calculate-mortgage">
+      <div class="wrapper">
+        <h2>Рассчитайте
+          ипотеку</h2>
+          <form class="calculate-form">
+            <div class="left">
+              <div class="input-wrap">
+                <span>Выберите программу</span>
+                <select>
+                  <option value="1">7-20-25</option>
+                  <option value="2">8-20-25</option>
+                </select>
+              </div>
+                <div class="filter-group">
+                  <div class="label">Стоимость</div>
+                  <div class="values">от <span id="price-min-val">10 000 000</span> ₸ — до <span id="price-max-val">50 000 000</span> ₸</div>
+                  <div class="range-slider">
+                    <input type="range" id="price-min" min="10000000" max="83000000" value="10000000" step="100000">
+                    <input type="range" id="price-max" min="10000000" max="83000000" value="50000000" step="100000">
+                  </div>
+                </div>
+              
+                <div class="filter-group">
+                  <div class="label">Площадь м²</div>
+                  <div class="values">от <span id="area-min-val">14,0</span> — до <span id="area-max-val">80,5</span></div>
+                  <div class="range-slider">
+                    <input type="range" id="area-min" min="14" max="80.5" step="0.5" value="14">
+                    <input type="range" id="area-max" min="14" max="80.5" step="0.5" value="80.5">
+                  </div>
+                </div>
+                <button class="blue-btn" type="button">Поиск</button>
+            </div>
+            <div class="right">
+              <div class="grey">7 предложений</div>
+              <div class="leave-items">
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img1.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img2.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img3.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img1.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img2.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+                <div class="leave-item">
+                  <div class="icon">
+                    <img src="img/leave-img3.png" alt="">
+                  </div>
+                  <b class="price">от 150 000 тг/мес</b>
+                  <span>от 10%</span>
+                  <span>10-30 лет</span>
+                  <a href="#" class="white-btn">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+
+    <div class="completed-projects">
+        <div class="wrapper">
+            <h2>Выберите подходящий ЖК</h2>
+            <div class="swiper completed-projects-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="completed-projects-item">
+                        <span class="img-wrap" style="background-image: url(img/office-img.png)">
+                        </span>
+                        <div class="top">
+                            <b class="name">ЖК Орлеу</b>
+                            <span class="price">от  19млн тг.</span>
+                        </div>
+                        <span class="address">г. Астана, Толеби 00</span>
+                    </a>
+                  </div>
+              </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="leave-request">
+        <div class="wrapper">
+          <div class="leave-request-info">
+            <div class="info">
+              <div class="texts">
+                <h2>Оставить
+                  заявку</h2>
+                  <span>Мы строим будущее</span>
+              </div>
+              <div class="img-wrap">
+                <img src="img/leave-request-img.svg" alt="">
+              </div>
+            </div>
+            <form class="leave-request-form">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <button class="blue-btn send-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <ul class="footer-menu">
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Оставить заявку</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+        <li><a href="#">Офис продаж</a></li>
+      </ul>
+      <div class="footer-info">
+        <a href="index.html" class="footer-logo">
+          <img src="img/footer-logo.svg" alt="">
+        </a>
+        <p>
+          Все материалы, размещённые на данном сайте, являются интеллектуальной собственностью компании Galamat © 2018–2025. Пользователь предупреждён, что без письменного согласия правообладателя запрещено копировать, распространять, использовать или иным образом распоряжаться указанными материалами. В случае нарушения этих условий, Galamat оставляет за собой право
+на применение мер, предусмотренных законодательством Республики Казахстан, включая взыскание штрафов и обращение
+в соответствующие государственные органы для защиты своих прав. Информация, размещённая на сайте, предназначена исключительно для ознакомления и не является публичной офертой.
+        </p>
+        <a href="#" class="private">
+          Политика Конфиденциальности
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+
+</body>
+</html>
+

@@ -3995,4 +3995,703 @@ input[type=range]::-moz-range-thumb {
   padding: 0;
 }
 
+.why-us-wrap {
+  margin: 25px 0;
+}
+
+.why-us-info {
+  padding: 40px;
+  border-radius: 16px;
+  background: #132C5E;
+}
+@media (max-width: 1024px) {
+  .why-us-info {
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .why-us-info {
+    padding: 30px 0 20px 20px;
+  }
+}
+.why-us-info h2 {
+  font-weight: 500;
+  font-size: 44px;
+  color: white;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .why-us-info h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .why-us-info h2 {
+    font-size: 30px;
+  }
+}
+.why-us-info p {
+  max-width: 790px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .why-us-info p {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .why-us-info p {
+    font-size: 14px;
+  }
+}
+.why-us-info .red-btn {
+  padding: 10px 28px;
+  color: white;
+  background: #DB1D31;
+  border: 1px solid #DB1D31;
+  border-radius: 40px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1024px) {
+  .why-us-info .red-btn {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .why-us-info .red-btn {
+    margin-bottom: 30px;
+  }
+}
+.why-us-info .red-btn:hover {
+  background: white;
+  color: #DB1D31;
+}
+
+.why-us-swiper .swiper-slide {
+  transition: 0.5s;
+  padding: 15px;
+  border-radius: 16px;
+  background: white;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .why-us-swiper .swiper-slide {
+    min-height: 140px;
+  }
+}
+@media (max-width: 1024px) {
+  .why-us-swiper .swiper-slide {
+    width: 280px;
+  }
+}
+.why-us-swiper .swiper-slide b {
+  max-width: 210px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #132C5E;
+  font-size: 28px;
+  line-height: 100%;
+  font-weight: 500;
+}
+@media (max-width: 1200px) {
+  .why-us-swiper .swiper-slide b {
+    font-size: 24px;
+  }
+}
+.why-us-swiper .swiper-slide span {
+  max-width: 210px;
+  display: inline-block;
+  color: #132C5E;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .why-us-swiper .swiper-slide span {
+    font-size: 13px;
+  }
+}
+
+.benefits-buying {
+  margin: 25px 0;
+}
+.benefits-buying h2 {
+  margin-bottom: 30px;
+  color: #353535;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 100%;
+  max-width: 640px;
+}
+@media (max-width: 1024px) {
+  .benefits-buying h2 {
+    font-size: 30px;
+    max-width: 380px;
+  }
+}
+
+.benefits-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+@media (max-width: 1024px) {
+  .benefits-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .benefits-items {
+    grid-template-columns: 1fr;
+  }
+}
+.benefits-items .benefits-item {
+  min-height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background: white;
+}
+@media (max-width: 1200px) {
+  .benefits-items .benefits-item {
+    min-height: 280px;
+  }
+}
+@media (max-width: 1024px) {
+  .benefits-items .benefits-item {
+    grid-column: inherit !important;
+    grid-row: inherit !important;
+    min-height: 250px;
+  }
+}
+.benefits-items .benefits-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .benefits-items .benefits-item img {
+    width: 80px;
+  }
+}
+.benefits-items .benefits-item.item1 {
+  grid-column: 1/3;
+}
+.benefits-items .benefits-item.item2 {
+  grid-column: 3/4;
+}
+.benefits-items .benefits-item.item3 {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.benefits-items .benefits-item.item3 .text {
+  margin-top: auto;
+}
+@media (max-width: 1024px) {
+  .benefits-items .benefits-item.item3 .text {
+    margin-top: 0;
+  }
+}
+.benefits-items .benefits-item.item4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.benefits-items .benefits-item.item5 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.benefits-items .benefits-item .text {
+  font-size: 28px;
+  font-weight: 500;
+  color: #353535;
+  line-height: 100%;
+  display: inline-block;
+  max-width: 350px;
+}
+@media (max-width: 1200px) {
+  .benefits-items .benefits-item .text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .benefits-items .benefits-item .text {
+    max-width: 280px;
+  }
+}
+
+.completed-projects {
+  margin: 25px 0;
+}
+.completed-projects h2 {
+  margin-bottom: 30px;
+  color: #353535;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 100%;
+  max-width: 640px;
+}
+@media (max-width: 1024px) {
+  .completed-projects h2 {
+    font-size: 30px;
+    max-width: 380px;
+  }
+}
+
+.completed-projects-swiper .swiper-slide {
+  width: 410px;
+}
+@media (max-width: 1024px) {
+  .completed-projects-swiper .swiper-slide {
+    width: 280px;
+  }
+}
+
+.completed-projects-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.completed-projects-item .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 610px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .completed-projects-item .img-wrap {
+    height: 400px;
+  }
+}
+.completed-projects-item .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.completed-projects-item .top .name {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .completed-projects-item .top .name {
+    font-size: 22px;
+  }
+}
+.completed-projects-item .top .price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #353535;
+}
+@media (max-width: 1024px) {
+  .completed-projects-item .top .price {
+    font-size: 16px;
+  }
+}
+.completed-projects-item .name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+  color: #353535;
+}
+@media (max-width: 1024px) {
+  .completed-projects-item .name {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+.completed-projects-item .address {
+  display: block;
+  font-size: 20px;
+  color: #626262;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .completed-projects-item .address {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+.completed-projects-item .date {
+  font-size: 14px;
+  color: #626262;
+}
+
+.bonus-wrap {
+  background: #132C5E;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .bonus-wrap {
+    padding: 40px 0;
+  }
+}
+.bonus-wrap .bonus-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.bonus-wrap .bonus-info .texts {
+  width: 44%;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info .texts {
+    width: 100%;
+  }
+}
+.bonus-wrap .bonus-info .texts h1 {
+  font-size: 110px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  line-height: 100%;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .bonus-wrap .bonus-info .texts h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info .texts h1 {
+    font-size: 50px;
+  }
+}
+.bonus-wrap .bonus-info .texts p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .bonus-wrap .bonus-info .texts p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info .texts p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+.bonus-wrap .bonus-info .texts .red-btn {
+  padding: 10px 28px;
+  color: white;
+  background: #DB1D31;
+  border: 1px solid #DB1D31;
+  border-radius: 40px;
+  margin-bottom: 70px;
+}
+@media (max-width: 1024px) {
+  .bonus-wrap .bonus-info .texts .red-btn {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info .texts .red-btn {
+    margin-bottom: 10px;
+  }
+}
+.bonus-wrap .bonus-info .texts .red-btn:hover {
+  background: white;
+  color: #DB1D31;
+}
+.bonus-wrap .bonus-info .bonus {
+  width: 54%;
+}
+@media (max-width: 767px) {
+  .bonus-wrap .bonus-info .bonus {
+    width: 100%;
+  }
+}
+.bonus-wrap .bonus-info .bonus img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.real-estate-calculator {
+  padding: 100px 0;
+  background: white;
+}
+@media (max-width: 1024px) {
+  .real-estate-calculator {
+    padding: 50px 0;
+  }
+}
+.real-estate-calculator .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .real-estate-calculator .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.real-estate-calculator .texts h3 {
+  margin-bottom: 20px;
+  color: #353535;
+  font-size: 44px;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .real-estate-calculator .texts h3 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .real-estate-calculator .texts h3 {
+    font-size: 30px;
+  }
+}
+.real-estate-calculator .texts p {
+  max-width: 620px;
+  margin-bottom: 40px;
+  color: #626262;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .real-estate-calculator .texts p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .real-estate-calculator .texts p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.real-estate-calculator .texts .red-btn {
+  padding: 10px 28px;
+  color: white;
+  background: #DB1D31;
+  border: 1px solid #DB1D31;
+  border-radius: 40px;
+}
+.real-estate-calculator .texts .red-btn:hover {
+  background: white;
+  color: #DB1D31;
+}
+.real-estate-calculator .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 1;
+}
+@media (max-width: 1024px) {
+  .real-estate-calculator .img {
+    display: none;
+  }
+}
+.real-estate-calculator .img img {
+  margin: auto;
+}
+
+.calculate-mortgage {
+  padding: 30px 0;
+}
+.calculate-mortgage h2 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #353535;
+}
+@media (max-width: 1024px) {
+  .calculate-mortgage h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .calculate-mortgage h2 {
+    font-size: 30px;
+  }
+}
+.calculate-mortgage .calculate-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .calculate-mortgage .calculate-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.calculate-mortgage .calculate-form .left {
+  width: 410px;
+  margin-right: 50px;
+}
+@media (max-width: 1200px) {
+  .calculate-mortgage .calculate-form .left {
+    width: 370px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .calculate-mortgage .calculate-form .left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.calculate-mortgage .calculate-form .left .blue-btn {
+  border-radius: 40px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  padding: 14px 28px;
+}
+.calculate-mortgage .calculate-form .left .input-wrap {
+  margin-bottom: 30px;
+}
+.calculate-mortgage .calculate-form .left .input-wrap > span {
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+  color: #353535;
+  margin-bottom: 6px;
+}
+.calculate-mortgage .calculate-form .left .input-wrap select {
+  width: 100%;
+  height: 50px;
+  border: none;
+  display: block;
+}
+.calculate-mortgage .calculate-form .right {
+  flex-grow: 1;
+  border-radius: 16px;
+  background: #FFF;
+  padding: 24px;
+}
+@media (max-width: 767px) {
+  .calculate-mortgage .calculate-form .right {
+    padding: 20px 16px;
+  }
+}
+.calculate-mortgage .calculate-form .right .grey {
+  padding: 8px 24px;
+  border-radius: 32px;
+  background: #E8EAEF;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #132C5E;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .leave-items {
+    overflow-x: auto;
+  }
+}
+.leave-items .leave-item {
+  border-radius: 7px;
+  background: #E8EAEF;
+  margin-bottom: 6px;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .leave-items .leave-item {
+    min-width: 570px;
+  }
+}
+.leave-items .leave-item .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.leave-items .leave-item span {
+  font-size: 14px;
+  color: #132C5E;
+  opacity: 0.7;
+}
+.leave-items .leave-item .price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #132C5E;
+  opacity: 0.7;
+}
+.leave-items .leave-item .white-btn {
+  padding: 10px 24px;
+  background: white;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #132C5E;
+}
+.leave-items .leave-item .white-btn:hover {
+  background: #132C5E;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

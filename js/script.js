@@ -25,6 +25,43 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  const swipe7 = new Swiper('.completed-projects-swiper', {
+    slidesPerView: 'auto',       
+    spaceBetween: 20,            
+    speed: 1000,             
+    // autoplay: {
+    //   delay: 3000,            
+    //   disableOnInteraction: false
+    // },
+    freeMode: false,            
+    loop: false               
+  });
+
+  const swiper6 = new Swiper('.why-us-swiper', {
+    speed: 600,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+      delay: 2000,   
+      disableOnInteraction: false, 
+    },
+    
+
+    breakpoints: {
+      0: {
+        slidesPerView: 'auto',
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    }
+  });
+
+
 
   const prevArrow = document.querySelector(".planning-wrap .slider-navigation .slick-prev");
   const nextArrow = document.querySelector(".planning-wrap .slider-navigation .slick-next");
