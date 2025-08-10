@@ -408,6 +408,12 @@
 
       <div class="banner-slider-wrap banner-slider-wrap2">
             <div class="wrapper">
+                <div class="gala-tabs">
+                    <div class="gala-tab-item active">Фасад</div>
+                    <div class="gala-tab-item">Двор</div>
+                    <div class="gala-tab-item">Холлы</div>
+                    <div class="gala-tab-item">Вид сверху</div>
+                </div>
                 <div class="swiper banner2Swiper">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="img/gala-b-img1.png" alt=""></div>
@@ -483,6 +489,14 @@
                 <button class="tab-btn" data-tab="tab2">Двор</button>
                 <button class="tab-btn "  data-tab="tab3">Холлы</button>
             </div>
+        </div>
+        <div class="arrows">
+            <button type="button">
+                <img src="img/gala-slider-arr.svg" alt="" style="transform: rotate(180deg)">
+            </button>
+            <button type="button">
+                <img src="img/gala-slider-arr.svg" alt="">
+            </button>
         </div>
       </div>
 
@@ -588,7 +602,7 @@
     <script>
         DG.then(function () {
           var map = DG.map('gis-map', {
-            center: [55.7522200, 37.6155600], // Москва (широта, долгота)
+            center: [55.7522200, 37.6155600],
             zoom: 13
           });
     

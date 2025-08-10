@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevArrow = document.querySelector(".planning-wrap .slider-navigation .slick-prev");
   const nextArrow = document.querySelector(".planning-wrap .slider-navigation .slick-next");
 
-  // Инициализация основного слайдера
+
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nextArrow: nextArrow,
   });
 
-  // Инициализация навигационного слайдера
+
   $(".slider-nav").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   const designHallsSlider = new Swiper(".design-halls", {
-    slidesPerView: "auto", // чтобы работала фикс. ширина
-    spaceBetween: 10,      // отступ между слайдами
-    grabCursor: true,      // курсор "рука"
-    freeMode: true         // свободная прокрутка без фиксации
+    slidesPerView: "auto", 
+    spaceBetween: 10,      
+    grabCursor: true,     
+    freeMode: true      
   });
 
   $(window).scroll(function () {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 1000,
   });
 
-  // Swiper 2
+
   const swiper2 = new Swiper(".office-swiper", {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // Tab switching
+
   const buttons = document.querySelectorAll(".tab-btn");
   const contents = document.querySelectorAll(".tab-content");
 
@@ -169,8 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const maxInput = document.getElementById(maxInputId);
     const minOut = document.getElementById(minOutputId);
     const maxOut = document.getElementById(maxOutputId);
-  
-    // Проверка наличия всех элементов
+
     if (!minInput || !maxInput || !minOut || !maxOut) return;
   
     function update() {
@@ -198,11 +197,9 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener('click', () => {
       const tabId = button.getAttribute('data-tab');
   
-      // Удаляем активные классы у кнопок и табов
       document.querySelectorAll('.tab-button2').forEach(btn => btn.classList.remove('active'));
       document.querySelectorAll('.tab-content2').forEach(tab => tab.classList.remove('active'));
   
-      // Добавляем активный класс к нажатой кнопке и соответствующему табу
       button.classList.add('active');
       document.getElementById(tabId).classList.add('active');
     });
