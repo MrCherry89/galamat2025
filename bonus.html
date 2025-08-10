@@ -88,6 +88,58 @@
         </div>
     </div>
 
+    <div class="popups">
+      <div class="wrapper">
+        <div class="global-popup verification-popup">
+          <button type="button" class="close">
+            <img src="img/popup-close.svg" alt="">
+          </button>
+          <h2>Пройдите верификацию</h2>
+          <span class="text">Введите номер телефона, чтобы получить код подтверждения</span>
+          <form>
+            <input type="tel" name="phone" placeholder="+7 700 777-77-77">
+            <div class="checkbox-wrap">
+              <label>
+                <input type="checkbox" />
+                <span></span>
+                Согласие на сбор и обработку персональных данных
+              </label>
+            </div>
+            <button class="send">Отправить</button>
+          </form>
+        </div>
+        <div class="global-popup verification-popup2">
+          <button type="button" class="close">
+            <img src="img/popup-close.svg" alt="">
+          </button>
+          <h2>Пройдите верификацию</h2>
+          <span class="text">Мы отправили вам код. Пожалуйста, введите его для подтверждения.</span>
+          <form>
+            <div class="code">6245</div>
+            <button class="send">Подтвердить</button>
+          </form>
+        </div>
+        <div class="global-popup error-popup">
+          <button type="button" class="close">
+            <img src="img/popup-close.svg" alt="">
+          </button>
+          <h2>Пройдите верификацию</h2>
+          <span class="text">Вы ввели неверный код. Пожалуйста, попробуйте ещё раз.</span>
+          <form>
+            <input type="tel" name="phone" placeholder="+7 700 777-77-77">
+            <button class="send">Отправить</button>
+          </form>
+        </div>
+        <div class="global-popup okey-popup">
+          <h3>Верификация
+            успешно пройдена!</h3>
+          <img src="img/okey-icon.svg" alt="" class="icon">
+          <p>Вы успешно подтвердили свой номер. Колесо Фортуны 
+            Gala Bonus будет активировано автоматически.</p>
+        </div>
+      </div>
+    </div>
+
 
   <footer class="footer">
     <div class="wrapper">

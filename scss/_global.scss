@@ -99,6 +99,7 @@ select{
     cursor: pointer;
     position: relative;
     font-size: 11px;
+    color: #D9D9D9;
     input {
       position: absolute;
       top: 0;
@@ -109,8 +110,9 @@ select{
       opacity: 0;
     }
     input:checked ~ span {
-      background: #004F36;
-      border-color: #004F36;
+      &:after{
+        opacity: 1;
+      }
     }
 
     input:checked ~ span:after {
@@ -128,6 +130,19 @@ select{
       border-radius: 4px;
       margin-right: 8px;
       background: #F6F8F7;
+      &:after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        background: #2859AA;
+        border-radius: 2px;
+        opacity: 0;
+        transition: .3s;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }

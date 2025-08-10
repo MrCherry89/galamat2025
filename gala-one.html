@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galamat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- <div class="wrapper">
+        <div class="popups2">
+            <div class="send-popup">
+                <div class="close-popup">
+                    <img src="img/close-white.svg" alt="">
+                </div>
+                <div class="popup-info">
+                    <div class="img">
+                        <img src="img/gala-modal-img.png" alt="">
+                    </div>
+                    <form class="gala-send-form">
+                        <h2>Оставьте
+                            заявку</h2>
+                        <p>Мы с вами свяжемся в скором времени</p>
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Номер телефона">
+                        <button class="send-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="okey-popup">
+                <div class="close-popup">
+                    <img src="img/close-white.svg" alt="">
+                </div>
+                <div class="popup-info">
+                    <div class="img">
+                        <img src="img/gala-modal-img.png" alt="">
+                    </div>
+                    <div class="okey-text">
+                        <img src="img/okey.svg" alt="">
+                        <h3>Мы уже получили вашу заявку и скоро свяжемся!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="leave-popup">
+                <div class="close-popup">
+                    <img src="img/close-white.svg" alt="">
+                </div>
+                <div class="leave-popup-info">
+                    <div class="texts">
+                        <div class="top-line">
+                            <b>ЖК Орлеу</b>
+                            <span class="style">Свободно</span>
+                        </div>
+                        <p>1-комнатная <br>
+                            квартира №394</p>
+                        <div class="infos">
+                            <div class="info-item">
+                                <span>Площадь:</span>
+                                <b>37м²</b>
+                            </div>
+                            <div class="info-item">
+                                <span>Этаж:</span>
+                                <b>5</b>
+                            </div>
+                            <div class="info-item">
+                                <span>Срок сдачи:</span>
+                                <b>25.05.2025</b>
+                            </div>
+                            <div class="info-item">
+                                <span>Стоимость:</span>
+                                <b>20 000 000тг.</b>
+                            </div>
+                            <div class="info-item">
+                                <span>Стоимость за м²:</span>
+                                <b>400 000тг.</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-wrap">
+                        <img src="img/leave-popup-img.png" alt="">
+                    </div>
+                </div>
+                <div class="bottom-line">
+                    <a href="#" class="circle">
+                        <img src="img/download-icon.svg" alt="">
+                    </a>
+                    <a href="#" class="blue-border-btn">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <header class="header" id="header">
+        <div class="wrapper">
+            <div class="top-line dekstop-hide">
+                <a href="index.html" class="logo">
+                  <img src="img/logo.svg" alt="">
+                </a>
+                <div class="drop-menu">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="menu-wrap">
+                  <ul class="main-menu">
+                    <li class="active"><a href="#">Недвижимость </a></li>
+                    <li><a href="error.html">Заявка</a></li>
+                    <li><a href="error.html">О компании</a></li>
+                    <li><a href="error.html">Акции</a></li>
+                    <li><a href="error.html">Способы покупки</a></li>
+                  </ul>
+                  
+                  <div class="btns">
+                    <select>
+                      <option value="1">RU</option>
+                      <option value="2">KZ</option>
+                    </select>
+                    <a href="#" class="border-btn order-call">Заказать звонок</a>
+                  </div>
+                </div>
+            </div>
+          <div class="bottom-line">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="main-menu">
+              <li><a href="#">Недвижимость </a></li>
+              <li  class="active"><a href="error.html">Заявка</a></li>
+              <li><a href="error.html">О компании</a></li>
+              <li><a href="error.html">Акции</a></li>
+              <li><a href="error.html">Способы покупки</a></li>
+            </ul>
+          </div>
+
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Проекты</a>
+            <span>ЖК Gala One</span>
+          </div>
+    </div>
+
+    <div class="gala-banner">
+        <div class="wrapper">
+            <div class="banner-info" style="background-image: url(img/gala-banner-img.png)">
+                <img src="img/gala-logo.svg" alt="" class="gala-logo">
+                <h1>Gala One</h1>
+                <p>Твоя точка на карте лучшего района. 
+                    Пересечение Ұлы Дала и Туран</p>
+                <div class="buttons">
+                    <a href="#" class="red-btn">Скачать буклет</a>
+                    <a href="#" class="blue-btn">Оставить заявку</a>
+                </div>
+                <div class="address">
+                    <span>
+                        <img src="img/addr-icon1.svg" alt="">
+                        Срок сдачи: III квартал 2026 года
+                    </span>
+                    <span>
+                        <img src="img/addr-icon2.svg" alt="">
+                        г. Астана, р-н Нура, пересечение ул Казыбек Би и Е75, Е77
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-slider-wrap">
+        <div class="wrapper">
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/gala-b-img1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img5.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="img/gala-b-img5.png" alt=""></div>
+                </div>
+               <div class="arrows-wrap">
+                <div class="swiper-button-prev">
+                    <img src="img/gala-slider-arr.svg" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                    <img src="img/gala-slider-arr.svg" alt="">
+                </div>
+               </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="gala-location">
+        <div class="wrapper">
+            <div class="info">
+                <div class="top">
+                    <h2>Идеальное расположение для активной жизни</h2>
+                    <p>
+                        Gala One окружён всем необходимым для активной и
+                         комфортной жизни. Здесь сочетаются удобство, энергия
+                          города и тишина уюта.
+                    </p>
+                </div>
+                <div class="swiper locationSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="top-line">
+                            <div class="icon">
+                                <img src="img/gala-loc-icon1.svg" alt="">
+                            </div>
+                            <span>Торговые
+                                центры</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">ТРЦ Mega Silk Way</span>
+                            </li>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">ТРЦ Ellington Mall</span>
+                            </li>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">Супермаркет Small</span>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="top-line">
+                            <div class="icon">
+                                <img src="img/gala-loc-icon2.svg" alt="">
+                            </div>
+                            <span>Спортивные
+                                комплексы</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">Барыс Арена</span>
+                            </li>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">ЛАСК «Qazaqstan»</span>
+                            </li>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">ЛД «Алау»</span>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="top-line">
+                            <div class="icon">
+                                <img src="img/gala-loc-icon3.svg" alt="">
+                            </div>
+                            <span>Учебные
+                                учреждения</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">AITU</span>
+                            </li>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">Назарбаев Университет</span>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="top-line">
+                            <div class="icon">
+                                <img src="img/gala-loc-icon4.svg" alt="">
+                            </div>
+                            <span>Парки</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="circle"></span>
+                                <span class="text">Eco-Park</span>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="img-wrap">
+                    <img src="img/gala-location-img.png" alt="">
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+     <div class="wrapper">
+        <div id="gis-map"></div>
+    </div>
+
+    <div class="leave-request gala-leave-request">
+        <div class="wrapper">
+          <div class="leave-request-info">
+            <div class="info" style="background-image: url(img/gala-request-bg.png)">
+                <div class="texts">
+                    <h2>Оставить
+                      заявку</h2>
+                      <span>Мы с вами свяжемся
+                        в скором времени</span>
+                  </div>
+            </div>
+            <form class="leave-request-form">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <button class="send-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div> 
+
+      <div class="information-block" style="background-image: url(img/information-bg.png)">
+        <div class="wrapper">
+            <div class="info">
+                <div class="info-item">
+                    <div class="top">
+                        <div class="icon">
+                            <img src="img/plus-white.svg" alt="">
+                        </div>
+                        <span>Комфортный
+                            двор</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Закрытый двор</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Зоны отдыха</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Детские площадки</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Спортивные зоны</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <div class="top">
+                        <div class="icon">
+                            <img src="img/plus-white.svg" alt="">
+                        </div>
+                        <span>Современные
+                            решения</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Face ID</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Smart замки</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Видеонаблюдение</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Стильные холлы</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-item">
+                    <div class="top">
+                        <div class="icon">
+                            <img src="img/plus-white.svg" alt="">
+                        </div>
+                        <span>Простор
+                            и надёжность</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Кирпичный фасад</span>
+                        </li>
+                        <li>
+                            <span class="circle"></span>
+                            <span class="text">Потолки 3 метра</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="banner-slider-wrap banner-slider-wrap2">
+            <div class="wrapper">
+                <div class="swiper banner2Swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/gala-b-img1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/gala-b-img5.png" alt=""></div>
+                    </div>
+                <div class="arrows-wrap">
+                    <div class="swiper-button-prev">
+                        <img src="img/gala-slider-arr.svg" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                        <img src="img/gala-slider-arr.svg" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="slider-big-image">
+                    <img src="img/slider-big-image.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+      <div class="leave-request gala-leave-request">
+        <div class="wrapper">
+          <div class="leave-request-info">
+            <div class="info" style="background-image: url(img/gala-request-bg.png)">
+                <div class="texts">
+                    <h2>Оставить
+                      заявку</h2>
+                      <span>Мы с вами свяжемся
+                        в скором времени</span>
+                  </div>
+            </div>
+            <form class="leave-request-form">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <button class="send-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tour-3d">
+        <div class="tab-cont-wrap">
+            <div class="tab-content active" id="tab1">
+                <div class="img-wrap">
+                    <img src="img/tour-img.png" alt="">
+                </div>
+              </div>
+              <div class="tab-content" id="tab2">
+                <div class="img-wrap">
+                    <img src="img/gala-banner-img.png" alt="">
+                </div>
+              </div>
+              <div class="tab-content" id="tab3">
+                <div class="img-wrap">
+                    <img src="img/tour-img.png" alt="">
+                </div>
+              </div>
+        </div>
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="tab1">Фасад</button>
+                <button class="tab-btn" data-tab="tab2">Двор</button>
+                <button class="tab-btn "  data-tab="tab3">Холлы</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="your-layout">
+        <div class="wrapper">
+            <h2>Выберите свою планировку</h2>
+            <div class="info">
+                <div class="images">
+                    <div class="scroll">
+                        <div class="img">
+                            <img src="img/your-layout-img.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="img/your-layout-img.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="img/your-layout-img.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="img/your-layout-img.png" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="img/your-layout-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="planing-info">
+                    <img src="img/planing-img.png" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="leave-request gala-leave-request">
+        <div class="wrapper">
+          <div class="leave-request-info">
+            <div class="info" style="background-image: url(img/gala-request-bg.png)">
+                <div class="texts">
+                    <h2>Оставить
+                      заявку</h2>
+                      <span>Мы с вами свяжемся
+                        в скором времени</span>
+                  </div>
+            </div>
+            <form class="leave-request-form">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Номер телефона">
+              <button class="send-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+          <ul class="footer-menu">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Оставить заявку</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Офис продаж</a></li>
+          </ul>
+          <div class="footer-info">
+            <a href="index.html" class="footer-logo">
+              <img src="img/footer-logo.svg" alt="">
+            </a>
+            <p>
+              Все материалы, размещённые на данном сайте, являются интеллектуальной собственностью компании Galamat © 2018–2025. Пользователь предупреждён, что без письменного согласия правообладателя запрещено копировать, распространять, использовать или иным образом распоряжаться указанными материалами. В случае нарушения этих условий, Galamat оставляет за собой право
+    на применение мер, предусмотренных законодательством Республики Казахстан, включая взыскание штрафов и обращение
+    в соответствующие государственные органы для защиты своих прав. Информация, размещённая на сайте, предназначена исключительно для ознакомления и не является публичной офертой.
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    <a href="#header" class="top-scroll">
+      <span class="icon">
+        <svg
+          width="16"
+          height="9"
+          viewBox="0 0 16 9"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.99997 6.99385e-07C8.09548 -0.000101352 8.19008 0.0192601 8.27832 0.0569722C8.36656 0.0946834 8.4467 0.150001 8.51415 0.219749L15.7869 7.71971C16.071 8.01277 16.071 8.48733 15.7869 8.7802C15.5027 9.07308 15.0425 9.07327 14.7585 8.7802L7.99997 1.81049L1.24143 8.78021C0.957251 9.07327 0.497068 9.07327 0.213069 8.78021C-0.0709305 8.48714 -0.0711137 8.01259 0.213069 7.71971L7.48578 0.219749C7.55323 0.150001 7.63338 0.0946834 7.72162 0.0569723C7.80986 0.0192602 7.90445 -0.000101335 7.99997 6.99385e-07Z"
+          />
+        </svg>
+      </span>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="js/script.js"></script>
+    <script>
+        DG.then(function () {
+          var map = DG.map('gis-map', {
+            center: [55.7522200, 37.6155600], // Москва (широта, долгота)
+            zoom: 13
+          });
+    
+          DG.marker([55.7522200, 37.6155600]).addTo(map).bindPopup('Пример метки!');
+        });
+      </script>
+
+</body>
+</html>
+
